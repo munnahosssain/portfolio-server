@@ -34,6 +34,10 @@ app.get('/', (req, res) => {
     res.send("Munna's Portfolio!")
 });
 
+app.get('/times', (req, res) => {
+    res.send(showTimes())
+});
+
 app.get('/projects', (req, res) => {
     res.send("projects!")
 })
